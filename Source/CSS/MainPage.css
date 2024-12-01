@@ -36,11 +36,62 @@ header{
     float: left;
     margin-left: 5%;
     padding: 1.5%;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 10px;
 }
 #contact-me{
-    width: 90%;
-    margin: auto;
-    margin-top: 20%;
+    width: 30%;
+    height: 150px;
+    clear: both;
+    float: left;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+#contact-me div{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 30px;
+}
+#social-media{
+    width: 20%;
+    height: 150px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+#social-media-obs{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+}
+#social-media div img{
+    width: 50px;
+    height: 50px;
+}
+#social-media-links{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 26px;
+    position: absolute;
+    bottom: 0;
+}
+ul{
+    list-style-type: none;
 }

@@ -6,11 +6,20 @@ body{
 header {
     border-bottom: 10px solid #FFF;
 }
-#about-me-left{
+#about-me-left,
+#about-me-right,
+#contact-me div,
+#social-media div{
     background-color: white;
     color: #4c4a4a;
 }
-#about-me-right{
-    background-color: white;
-    color: #4c4a4a;
+h1{
+    color: #fff;
+}
+h2{
+    border-left: 3px solid white;
+    color: white;
+}
+footer{
+    border-top: 1px solid white;
 }

@@ -1,7 +1,25 @@
 body{
-    background-color: #FFF;
+    background-color: white;
+    font-size: medium;
     color: #4c4a4a;
 }
 header {
     border-bottom: 10px solid #19297c;
+}
+#about-me-left,
+#about-me-right,
+#contact-me div,
+#social-media div{
+    background-color: #19297c;
+    color: #FFF;
+}
+h1{
+    color: #19297c;
+}
+h2{
+    border-left: 3px solid #19297c;
+    color: #19297c;
+}
+footer{
+    border-top: 1px solid #19297c;
 }
