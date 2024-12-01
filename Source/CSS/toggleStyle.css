@@ -36,14 +36,17 @@
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
+    background-image: url("../img/toggle-day.png");
+    border: 1px solid black;
+    background-blend-mode: multiply;
 }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #ccc;
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #ffffff;
 }
 
 input:checked + .slider:before {
@@ -59,4 +62,11 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+.slider.dark-slider {
+}
+
+.slider.dark-slider:before {
+    background-color: white;
+    background-image: url("../img/toggle-night.png");
 }

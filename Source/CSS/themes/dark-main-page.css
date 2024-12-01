@@ -1,0 +1,16 @@
+body{
+    background-color: #4c4a4a;
+    color: white;
+    font-size: medium;
+}
+header {
+    border-bottom: 10px solid #FFF;
+}
+#about-me-left{
+    background-color: white;
+    color: #4c4a4a;
+}
+#about-me-right{
+    background-color: white;
+    color: #4c4a4a;
+}
