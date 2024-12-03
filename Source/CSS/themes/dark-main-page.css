@@ -9,7 +9,8 @@ header {
 #about-me-left,
 #about-me-right,
 #contact-me div,
-#social-media div{
+#social-media div,
+#demos div{
     background-color: white;
     color: #4c4a4a;
 }
@@ -22,4 +23,5 @@ h2{
 }
 footer{
     border-top: 1px solid white;
+    color: #fff;
 }

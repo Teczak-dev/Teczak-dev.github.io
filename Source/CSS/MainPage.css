@@ -5,10 +5,15 @@
 }
 header{
     width: 100%;
-    height: 100px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.switch{
+    position: absolute;
+    left: 0;
+    top: -50px;
 }
 #about-me{
     width: 90%;
@@ -78,19 +83,30 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-
+#demos{
+    width: 70%;
+    height: 350px;
+    clear: both;
+    float: left;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#demos div{
+    height: 100%;
+    border-radius: 10px;
+    padding: 15px;
+}
 
 
 footer{
     width: 100%;
-    height: 50px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     font-size: 26px;
-    position: absolute;
-    bottom: 0;
 }
 ul{
     list-style-type: none;
