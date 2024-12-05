@@ -6,28 +6,40 @@ $(document).ready(function() {
         if (currentTheme === "Source/CSS/themes/light-main-page.css") {
             newTheme = "Source/CSS/themes/dark-main-page.css";
             $(".slider").addClass("dark-slider");
-            changeProfilesImages(true);
+            animWeb(true);
         }else {
             newTheme = "Source/CSS/themes/light-main-page.css";
             $(".slider").removeClass("dark-slider");
-            changeProfilesImages(false);
+            animWeb(false);
         }
+        setTimeout(()=>{
         themeLink.setAttribute("href", newTheme);
+        },1000)
 
     });
 });
 function changeProfilesImages(isDark){
-    facebook = $('#fbImg');
-    instagram = $('#igImg');
-    github = $('#ghImg');
     if(isDark){
-        facebook.attr('src', "Source/social-media/fb/Facebook_Logo_Primary.png");
-        instagram.attr('src', "Source/social-media/ig/Instagram_Glyph_Gradient.png");
-        github.attr('src', "Source/social-media/github/github-mark.png");
+        $("#links-black").css("display", "flex");
+        $("#links-white").css("display", "none");
     }
     else{
-        facebook.attr('src', "Source/social-media/fb/Facebook_Logo_Secondary.png");
-        instagram.attr('src', "Source/social-media/ig/Instagram_Glyph_White.png");
-        github.attr('src', "Source/social-media/github/github-mark-white.png");
+        $("#links-white").css("display", "flex");
+        $("#links-black").css("display", "none");
     }
+}
+function animWeb(isBlack){
+    block = $("#animWebsite");
+    block.css({
+        "top": "120vh",
+    })
+    setTimeout(()=>{
+
+        changeProfilesImages(isBlack);
+        block.css({
+            "display": "block",
+            "top": "0"
+        })
+    },1000);
+
 }

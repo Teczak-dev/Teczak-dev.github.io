@@ -9,7 +9,8 @@ header {
 #about-me-left,
 #about-me-right,
 #contact-me div,
-#social-media div{
+#social-media div,
+#demos div{
     background-color: #19297c;
     color: #FFF;
 }
