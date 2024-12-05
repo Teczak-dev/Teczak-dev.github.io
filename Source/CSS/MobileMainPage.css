@@ -1,0 +1,48 @@
+@media screen and (max-width: 750px) {
+    .switch{
+        transform: scale(3);
+        top: 0;
+        position: fixed;
+    }
+    #about-me{
+        width: 100%;
+    }
+    #about-me-left{
+        min-height: 300px;
+        width: 100%;
+        font-size: 30px;
+    }
+    #about-me-right{
+        width: 100%;
+        clear: both;
+        text-wrap: auto;
+        min-height: 300px;
+        font-size: 20px;
+    }
+    #contact-me{
+        min-height: 150px;
+        margin-left: 0;
+    }
+    #contact-me div{
+        width: 100%;
+        font-size: 22px;
+    }
+    #social-media{
+        width: 100%;
+        min-height: 150px;
+        margin-left: 0;
+    }
+    #demos{
+        width: 100%;
+        min-height: 350px;
+        margin-left: 0;
+
+    }
+    #footer{
+        font-size: 20px;
+    }
+
+
+
+
+}
