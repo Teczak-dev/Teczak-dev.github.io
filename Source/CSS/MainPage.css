@@ -122,6 +122,8 @@ footer{
     align-items: center;
     font-weight: bold;
     font-size: 26px;
+    position: absolute;
+    bottom: 0;
 }
 ul{
     list-style-type: none;
