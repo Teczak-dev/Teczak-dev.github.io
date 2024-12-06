@@ -13,6 +13,9 @@
         margin-left: 20%;
         min-height: 300px;
     }
+    #contact-me{
+        margin-bottom: 5%;
+    }
 }
 @media screen and (max-width: 1450px) {
     #about-me-right{
