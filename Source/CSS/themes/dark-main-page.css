@@ -1,27 +1,27 @@
 body{
-    background-color: #4c4a4a;
+    background-color: #222;
     color: white;
     font-size: medium;
 }
 header {
-    border-bottom: 10px solid #FFF;
+    border-bottom: 10px solid #444;
 }
 #about-me-left,
 #about-me-right,
 #contact-me div,
 #social-media div,
 #demos div{
-    background-color: white;
-    color: #4c4a4a;
+    background-color: #333;
+    color: #E9EAEC;
 }
 h1{
-    color: #fff;
+    color: #E9EAEC;
 }
 h2{
-    border-left: 3px solid white;
-    color: white;
+    border-left: 3px solid #444;
+    color: #E9EAEC;
 }
 footer{
-    border-top: 1px solid white;
-    color: #fff;
+    border-top: 1px solid #444;
+    color: #E9EAEC;
 }
