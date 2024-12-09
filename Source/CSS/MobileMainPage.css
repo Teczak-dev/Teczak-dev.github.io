@@ -112,4 +112,7 @@
     #about-me-right{
         height: 600px;
     }
+    #toogleBtnContainer{
+        top:120px;
+    }
 }

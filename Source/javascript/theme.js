@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    $(screen).
+
     $("#ToggleBtn").on("click", () => {
         const themeLink = document.getElementById("theme-style-file");
         const currentTheme = themeLink.getAttribute("href");
