@@ -1,6 +1,13 @@
 $(document).ready(function() {
 
-    $(screen).
+    window.addEventListener('scroll', ()=>{
+        if (window.innerWidth <600 && window.scrollY>120) {
+            $("#toogleBtnContainer").css("top","5px")
+        }
+        else{
+            $("#toogleBtnContainer").css("top","120px")
+        }
+    });
 
     $("#ToggleBtn").on("click", () => {
         const themeLink = document.getElementById("theme-style-file");
