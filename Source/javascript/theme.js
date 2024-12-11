@@ -1,13 +1,7 @@
 $(document).ready(function() {
 
-    window.addEventListener('scroll', ()=>{
-        if (window.innerWidth < 600 && window.scrollY>120) {
-            $("#toogleBtnContainer").css("top","5px")
-        }
-        else if(window.innerWidth < 600 && window.scrollY<120){
-            $("#toogleBtnContainer").css("top","110px")
-        }
-    });
+    window.addEventListener('resize',  toogleMove )
+    window.addEventListener('scroll', toogleMove );
 
     $("#ToggleBtn").on("click", () => {
         const themeLink = document.getElementById("theme-style-file");
@@ -51,4 +45,16 @@ function animWeb(isBlack){
         })
     },1000);
 
+}
+
+function toogleMove(){
+    if (window.innerWidth < 600 && window.scrollY>120) {
+        $("#toogleBtnContainer").css("top","5px")
+    }
+    else if(window.innerWidth < 600 && window.scrollY<120){
+        $("#toogleBtnContainer").css("top","110px")
+    }
+    else{
+        $("#toogleBtnContainer").css("top","5px")
+    }
 }
