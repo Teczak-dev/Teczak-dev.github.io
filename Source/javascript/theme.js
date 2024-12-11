@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
     window.addEventListener('scroll', ()=>{
-        if (window.innerWidth <600 && window.scrollY>120) {
+        if (window.innerWidth < 600 && window.scrollY>120) {
             $("#toogleBtnContainer").css("top","5px")
         }
-        else if(window.innerWidth <600 && window.scrollY<120){
-            $("#toogleBtnContainer").css("top","120px")
+        else if(window.innerWidth < 600 && window.scrollY<120){
+            $("#toogleBtnContainer").css("top","110px")
         }
     });
 
