@@ -4,7 +4,7 @@ $(document).ready(function() {
         if (window.innerWidth <600 && window.scrollY>120) {
             $("#toogleBtnContainer").css("top","5px")
         }
-        else{
+        else if(window.innerWidth <600 && window.scrollY<120){
             $("#toogleBtnContainer").css("top","120px")
         }
     });
