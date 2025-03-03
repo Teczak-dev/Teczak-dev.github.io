@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta name="description" content="Programista :>">
+        <meta name="author" content="Mikołaj Sobczak">
+        <meta name="keywords" content="programista, Mikołaj, Mikołaj Sobczak">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Source/CSS/MainPage.css">
+        <link rel="stylesheet" href="Source/CSS/toggleStyle.css">
+        <link rel="stylesheet" href="Source/CSS/MobileMainPage.css">
+
+        <link id="theme-style-file" rel="stylesheet" href="Source/CSS/themes/dark-main-page.css">
+        <script src="jquery-3.7.1.js"></script>
+        <title>Strona Domowa</title>
+    </head>
+    <body>
+
+
+    <!--          Fajny przycisk on/off toggle button :> -->
+
+    <div id="toogleBtnContainer">
+        <label class="switch">
+            <input type="checkbox" id="ToggleBtn">
+            <span class="slider round dark-slider"></span>
+        </label>
+    </div>
+
+        <div id="animWebsite">
+           <header>
+               <h1>Wymyśl, Stwórz i Rozwijaj</h1>
+               <img src="" alt="">
+           </header>
+
+                <!-- O nas  -->
+                <section id="about-me">
+                    <h2>O mnie</h2>
+                    <div id="about-me-left">
+                        <img src="Source/img/profilowe.jpg" alt="Profilowe">
+                        <h3>Mikołaj Sobczak</h3>
+                    </div>
+                    <div id="about-me-right">
+                        <p>Jestem Mikołaj Sobczak, zajmuję się programowaniem od września 2020 roku. Mam już trochę doświadczenia
+                        w tej dziedzinię także chętnię się nią z wami podzielę! </p>
+                        <p>Tworzę storny internetowe od prostych wizytówek lub blogów do zaawansowanych stron z zakupami, chatbotami itp.</p>
+                        <p>W wolnym czasie zajmuję się tworzeniem aplikacji mobilnych, desktopowych oraz gier. Zarządzanie serwerami też nie sprawia mi problemu.</p>
+                        <p>Jeżeli potrzebujesz pomocy przy czymś związanym z tworzeniem, zarządzaniem, doskonaleniem projektów lub po prostu chcesz pogadać o IT to zapraszam do komunikacji.</p>
+                    </div>
+                </section>
+
+                <section id="contact-me">
+                    <h2>Kontakt</h2>
+                    <div>
+                        <span>
+                            można się że mną skontaktować poprzez:
+                        </span>
+                        <ul>
+                            <li>- nr telefonu: 519 307 036</li>
+                            <li>- e-mail: mikolaj.sobczak06@icloud.com</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="social-media">
+                    <h2>Moje profile</h2>
+                    <div id="social-media-obs">
+                        Odwiedź mnie na:
+                        <div id="social-media-links">
+                            <div id="links-black">
+                                <a href="https://www.instagram.com/teczak_gaming/" target="_blank"><img src="Source/social-media/ig/Instagram_Glyph_White.png" alt=""></a>
+                                <a href="https://github.com/Teczak-dev" target="_blank"><img src="Source/social-media/github/github-mark-white.png" alt=""></a>
+                                <a href="https://www.youtube.com/@teczak" target="_blank"><img src="Source/social-media/yt/icons8-youtube-logo-50.png" alt=""></a>
+
+                            </div>
+                            <div id="links-white" style="display: none">
+                                <a href="https://www.instagram.com/teczak_gaming/" target="_blank"><img id="igImg" src="Source/social-media/ig/Instagram_Glyph_Gradient.png" alt=""></a>
+                                <a href="https://github.com/Teczak-dev" target="_blank"><img id="ghImg" src="Source/social-media/github/github-mark.png" alt=""></a>
+                                <a href="https://www.youtube.com/@teczak" target="_blank"><img style="width: 75px" id="ytImg" src="Source/social-media/yt/youtube_social_icon_white.png" alt=""></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <section id="demos">
+                    <h2>Dema technologiczne</h2>
+                    <div>
+                        <div class="demo-show">
+                            <h1>Tytuł</h1>
+                            <p>Opis</p>
+                            <input type="button" value="Otwórz w przeglądarce" onclick="openDemo('projekt1')">
+                            <input type="button" value="Podgląd" onclick="previewDemo('projekt1')">
+                        
+                        </div>
+                    </div>
+                </section>
+
+    <!--            <section id="portfolio">-->
+    <!--                Portfolio-->
+    <!--            </section>-->
+
+
+
+                <footer>
+                    Stronę wykonał: Mikołaj Sobczak, Wszelkie prawa zastrzeżone!
+                </footer>
+        </div>
+
+        <script src="Source/javascript/theme.js"></script>
+    </body>
+</html>

@@ -1,0 +1,138 @@
+@media screen and (max-width: 1700px) {
+    #about-me h2{
+        margin-left: 20%;
+    }
+    #about-me-left{
+        width: 300px;
+        margin-left: 20%;
+    }
+    #about-me-right{
+        width: 60%;
+        clear: both;
+        margin-top: 3%;
+        margin-left: 20%;
+        min-height: 300px;
+    }
+    #contact-me{
+        margin-bottom: 5%;
+    }
+}
+@media screen and (max-width: 1450px) {
+    #about-me-right{
+        height: 400px;
+    }
+    #contact-me{
+        height: 200px;
+        text-wrap: auto;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #about-me-right{
+        height: 520px;
+    }
+    #contact-me{
+        width: 60%;
+        margin-left: 22%;
+        height: 150px;
+        text-wrap: wrap;
+    }
+    #social-media{
+        width: 60%;
+        margin-left: 22%;
+        height: 150px;
+    }
+    #demos{
+        width: 60%;
+        margin-left: 22%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .switch{
+        transform: scale(1.2);
+    }
+    #about-me{
+        width: 100%;
+    }
+    #about-me h2{
+        margin:0;
+    }
+    #about-me-left{
+        min-height: 300px;
+        width: 100%;
+        font-size: 30px;
+        margin-left: 0;
+    }
+    #about-me-right{
+        width: 100%;
+        clear: both;
+        text-wrap: auto;
+        height: 400px;
+        font-size: 20px;
+        margin-left: 0;
+        margin-top: 5%;
+
+    }
+    #about-me-right p{
+        height: auto;
+    }
+    #contact-me{
+        width: 100%;
+        height: 250px;
+        margin-left: 0;
+    }
+    #contact-me div{
+        width: 100%;
+        font-size: 22px;
+    }
+    #social-media{
+        margin-top: 10%;
+        width: 100%;
+        min-height: 150px;
+        margin-left: 0;
+    }
+    #demos{
+        margin-top: 10%;
+        width: 100%;
+        height: 350px;
+        margin-left: 0;
+        margin-bottom: 20%;
+
+    }
+    footer{
+        font-size: 20px;
+        margin-top: 7%;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 600px) {
+    header{
+        height: 100px;
+        text-wrap: wrap;
+    }
+    #about-me-right{
+        height: 670px;
+    }
+    #toogleBtnContainer{
+        top:110px;
+    }
+    #about-me-right,
+    #contact-me,
+    #social-media,
+    #demos,
+    #social-media-obs,
+    footer{
+        font-size: 25px;
+    }
+    footer{
+        margin-top: 17%;
+        height: 100px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #about-me-right{
+        height: 670px;
+    }
+    #demos{
+        margin-top: 15%;
+    }
+}

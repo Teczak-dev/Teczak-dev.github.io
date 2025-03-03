@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #222;
+    color: #FFF;
+}
+header{
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 5px solid rgb(116, 116, 116);
+}
+form{
+    width: 300px;
+    height: 200px;
+    background-color: #333;
+    margin: auto;
+    margin-top: 10%;
+    padding: 10px;
+    border-radius: 10px;
+}
+#l{
+    padding-bottom: 40px;
+}
