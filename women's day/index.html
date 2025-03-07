@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Women's day</title>
+        <style>
+            body{
+                background: linear-gradient(90deg, rgba(124,26,121,1) 20%, rgba(210,30,205,1) 50%, rgba(124,26,121,1) 80%);
+            }
+            main{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(90deg, rgba(124,26,121,1) 20%, rgba(210,30,205,1) 50%, rgba(124,26,121,1) 80%);
+            }
+            #QuestMark{
+                width: 400px;
+                height: 400px;
+                background-color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 10px;
+                transition-duration: 500ms;
+            }
+            canvas {
+                border-radius: 20px;
+                border: 1px solid black;
+                display: none;
+            }
+            /*  rózowe roze */
+        </style>
+    </head>
+    <body>
+        <main>
+            <div id="QuestMark" onclick="StartShowcase()">
+                <h1 style="font-size: 300px;color: white;">?</h1>
+            </div>
+            <canvas id="rabbitCanvas" width="400" height="400"></canvas>
+        </main>
+
+        <script>
+            const canvas = document.getElementById("rabbitCanvas");
+            const ctx = canvas.getContext("2d");
+
+            function drawRabbit() {
+                ctx.fillStyle = "#ddd";
+                
+                // Ciało
+                ctx.beginPath();
+                ctx.ellipse(200, 270, 70, 90, 0, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Głowa
+                ctx.beginPath();
+                ctx.ellipse(200, 180, 50, 60, 0, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Uszy
+                ctx.fillStyle = "#ccc";
+                ctx.beginPath();
+                ctx.ellipse(180, 100, 20, 70, Math.PI / 8, 0, Math.PI * 2);
+                ctx.ellipse(220, 100, 20, 70, -Math.PI / 8, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Wewnętrzna część uszu
+                ctx.fillStyle = "#AA336A";
+                ctx.beginPath();
+                ctx.ellipse(180, 100, 10, 50, Math.PI / 8, 0, Math.PI * 2);
+                ctx.ellipse(220, 100, 10, 50, -Math.PI / 8, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Oczy
+                ctx.fillStyle = "black";
+                ctx.beginPath();
+                ctx.arc(185, 175, 6, 0, Math.PI * 2);
+                ctx.arc(215, 175, 6, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Nosek
+                ctx.fillStyle = "pink";
+                ctx.beginPath();
+                ctx.arc(200, 190, 5, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Łapki
+                ctx.fillStyle = "#bbb";
+                ctx.beginPath();
+                ctx.ellipse(170, 320, 20, 40, 0, 0, Math.PI * 2);
+                ctx.ellipse(230, 320, 20, 40, 0, 0, Math.PI * 2);
+                ctx.fill();
+        }
+
+        function drawRose() {
+            ctx.fillStyle = "green";
+            ctx.fillRect(250, 280, 5, 70);
+            
+            ctx.fillStyle = "pink";
+            ctx.beginPath();
+            ctx.arc(252, 250, 20, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(240, 245, 15, 0, Math.PI * 2);
+            ctx.arc(264, 245, 15, 0, Math.PI * 2);
+            ctx.arc(252, 235, 13, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        function drawScene() {
+            drawRabbit();
+            drawRose();
+        }
+
+        function StartShowcase(){
+            document.getElementById("QuestMark").style.top = "-420px";
+            document.getElementById("rabbitCanvas").style = "display: block";
+            drawScene();
+            setTimeout(()=>{
+                document.getElementById("QuestMark").style = "display:none;";
+                
+            },500)
+                
+        }
+        </script>
+    </body>
+</html>
