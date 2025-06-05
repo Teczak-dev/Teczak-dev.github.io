@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unreal Engine 5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #181818;
+            color: #fff;
+        }
+        header {
+            background: #2d2d2d;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        .items {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .item {
+            background: #242424;
+            border-radius: 10px;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .item-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        .item-price {
+            font-size: 1.1rem;
+            background: #3a86ff;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: bold;
+            border: none;
+            transition-duration: 500ms;
+        }
+        .item-price:hover{
+            transform: scale(1.2);
+        }
+        @media (max-width: 600px) {
+            .items {
+                max-width: 100%;
+            }
+            .item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../index.html" style="text-decoration: none; color: white; position: absolute;left:10px; top:10px;">Powrót do strony głównej</a>
+        <h1>Unreal Engine 5</h1>
+    </header>
+    <main>
+        <div class="items">
+            <div class="item">
+                <span class="item-title">Nauka UE5</span>
+                <button class="item-price" onclick="openInfo()">3 euro/h</button>
+            </div>
+            <div class="item">
+                <span class="item-title">Projekt UE5 – ukończony</span>
+                <button class="item-price" onclick="openInfo()">20 euro</button>
+            </div>
+        </div>
+        <div id="infoPanel" style="background-color: #fff; width: 400px;height: 270px;position: absolute; left: 40%; top: 10%;display: none; border-radius: 20px; padding-left: 5px;">
+            <h2 style="color:#181818;">Ceny są orientacyjne i mogą się różnić w zależności od relacji. Skontaktuj się ze mną( twórca strony ), aby uzyskać dokładną wycenę.</h2>
+            <button onclick="closeinfo()" style="width: 90%; height: 50px; background-color: #3a86ff;border: none; border-radius: 10px; margin-left: 5%;" >Zamknij</button>
+        </div>
+    </main>
+    <script>
+        function openInfo(){
+            document.getElementById("infoPanel").style.display = "block";
+        }
+        function closeinfo(){
+            document.getElementById("infoPanel").style.display = "none";
+        }
+    </script>
+</body>
+</html>
